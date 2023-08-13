@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import { CalendarComponent } from './calendar/calendar.component';
+import { TaskListComponent } from './task-list/task-list.component';
+const routes: Routes = [
+	{component:CalendarComponent,path:''},
+	{component:TaskListComponent,path:'tasks'}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
